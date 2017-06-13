@@ -180,6 +180,8 @@ span
     background:#9b59b6;
     z-index: 1;
     transition: .5s;
+    border: 5px solid white;
+    border-radius: 10px;
 
 }
 
