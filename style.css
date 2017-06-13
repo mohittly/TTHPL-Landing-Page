@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: #eee;
+    background: #262626;
     height: 100%; 
     overflow: hidden;
 }
@@ -141,5 +141,123 @@ body {
         -webkit-transform: translateY(-2000px) rotate(630deg);
         transform: translateY(-2000px) rotate(630deg);
     }
+}
+
+.AU
+{
+    cursor: pointer;
+    width: 100%;
+    
+}
+
+.AU a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+span
+{
+    position: relative;
+    top:20%;
+}
+
+.screen
+{
+
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom: -100%;
+    left: 0.8%;
+    width: 98.4%;
+    height: 100%;
+    background:#9b59b6;
+    z-index: 1;
+    transition: .5s;
+
+}
+
+.screen.active
+{
+    top:60px;
+    overflow:auto;
+}
+
+.screen2
+{
+   
+    
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom:-100%;
+    left: 0.8%;
+    width: 98.4%;
+    height: 100%;
+    background:#4db6ac;
+    z-index: 1;
+    transition: 2s;
+
+}
+
+.screen2.active2
+{
+    top:120px;
+    overflow:auto;
+   
+}
+
+.screen3
+{
+   
+    
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom:-100%;
+    left: 0.8%;
+    width: 98.4%;
+    height: 100%;
+    background:#e74c3c;
+    z-index: 1;
+    transition: 2s;
+
+}
+
+.screen3.active3
+{
+    top:180px;
+    overflow:auto;
+   
+}
+
+.screen4
+{
+   
+    
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    bottom:-100%;
+    left: 0.8%;
+    width: 98.4%;
+    height: 100%;
+    background:#3498db;
+    z-index: 1;
+    transition: 2s;
+
+}
+
+.screen4.active4
+{
+    top:240px;
+    overflow:auto;
+   
 }
 
