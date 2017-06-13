@@ -6,6 +6,28 @@
 	border :0;
 }
 
+a.fancy {
+
+	color:white;
+	border: 1px solid white;
+	display : inline-block;
+	width: 400px;
+	border-radius: 5px;
+	padding: 8px;
+	margin: 10px;
+	text-decoration: none;
+	text-align: center;
+	transition: color 0.5s ease-out, background-color 0.5s ease-out;
+}
+
+a.fancy:hover, a.fancy:focus {
+
+	background-color: white;
+	color: black;
+	transition: 
+	transition: color 0.5s ease-in, background-color 0.5s ease-in;
+}
+
 body
 {
 	background-color: #f5f5f5;
@@ -36,7 +58,7 @@ p
 {
 	font-family: 'Alegreya',sans-serif;
 	color: #f5f5f5;
-	font-size: 160%;
+	font-size: 120%;
 	line-height: 150%;
 	padding: 3%;
 	text-indent: 2%;
