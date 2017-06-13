@@ -1,265 +1,554 @@
-html {
-    height: 100%; 
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+
+* {
+	margin: 0;
+	padding: 0;
+	border :0;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background: #262626;
-    height: 100%; 
-    overflow: hidden;
-}
-
-#containers {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: #333;
-    overflow: hidden;
-}
-
-#containers .glass {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #fff;
-    opacity: 0.1;
-    -webkit-transform-origin: 0 100% ;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-}
-
-.bubbles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-    z-index: 0;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-}
-
-.bubbles li {
-    position: absolute;
-    list-style: none;
-    display: block;
-    background-color: rgba(255, 255, 255, 0.15);
-    bottom: -100px;
-    -webkit-animation: square 20s infinite;
-    animation: square 20s infinite;
-    -webkit-transition-timing-function: linear;
-    transition-timing-function: linear;
-}
-
-.bubbles li:nth-child(1) {
-    width: 40px;
-    height: 40px;
-    left: 20%;
-}
-.bubbles li:nth-child(2) {
-    width: 60px;
-    height: 60px;
-    left: 40%;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-duration: 17s;
-    animation-duration: 17s;
-}
-
-.bubbles li:nth-child(3) {
-    width: 20px;
-    height: 20px;
-    left: 60%;
-    -webkit-animation-delay: 4s;
-    animation-delay: 4s;
-    -webkit-animation-duration: 13s;
-    animation-duration: 13s;
-}
-
-.bubbles li:nth-child(4) {
-    width: 80px;
-    height: 80px;
-    left: 80%;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    -webkit-animation-duration: 22s;
-    animation-duration: 22s;
-}
-
-.bubbles li:nth-child(5) {
-    width: 50px;
-    height: 50px;
-    left: 50%;
-    -webkit-animation-delay: 7s;
-    animation-delay: 7s;
-    -webkit-animation-duration: 12s;
-    animation-duration: 12s;
-}
-
-.bubbles li:nth-child(6) {
-    width: 70px;
-    height: 70px;
-    left: 70%;
-    -webkit-animation-delay: 3s;
-    animation-delay: 3s;
-    -webkit-animation-duration: 9s;
-    animation-duration: 9s;
-}
-
-.bubbles li:nth-child(7) {
-    width: 30px;
-    height: 30px;
-    left: 90%;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-    -webkit-animation-duration: 7s;
-    animation-duration:7s;
-}
-
-@-webkit-keyframes square {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        -webkit-transform: translateY(-2000px) rotate(630deg);
-        transform: translateY(-2000px) rotate(630deg);
-    }
-}
-
-@keyframes square {
-    0% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-    100% {
-        -webkit-transform: translateY(-2000px) rotate(630deg);
-        transform: translateY(-2000px) rotate(630deg);
-    }
-}
-
-.AU
+body
 {
-    cursor: pointer;
-    width: 100%;
-    
+	background-color: #f5f5f5;
+	color: #67727A;
+	font-family: 'Alegreya',sans-serif;
+	margin: 0;
 }
 
-.AU a
+h2
 {
-    text-decoration: none;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    height: 100%;
+	font-size: 250%;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 2%;
+	color: #f5f5f5; 
 }
 
-span
+h3
 {
-    position: relative;
-    top:20%;
+	font-size: 175%;
+	line-height: 155%;
+	padding: 5% 0;
+	font-weight: 400;
+	color: #f5f5f5; 
 }
 
-.screen
+p
 {
-
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    bottom: -100%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background:#9b59b6;
-    z-index: 1;
-    transition: .5s;
-    border: 5px solid white;
-    border-radius: 10px;
-
+	font-family: 'Alegreya',sans-serif;
+	color: #f5f5f5;
+	font-size: 160%;
+	line-height: 150%;
+	padding: 3%;
+	text-indent: 2%;
+	text-align: justify;
 }
 
-.screen.active
+img
 {
-    top:60px;
-    overflow:auto;
+	max-width: 100%;
+	height: auto;
+	width: auto;
+	margin-bottom: -4px;
 }
 
-.screen2
+header
 {
-   
-    
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    bottom:-100%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background:#4db6ac;
-    z-index: 1;
-    transition: 2s;
-
+	background-color: #6991AC;
+	width: 100%;
+	height: 80px;
 }
 
-.screen2.active2
+#header-inner
 {
-    top:120px;
-    overflow:auto;
-   
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
-.screen3
+#logo
 {
-   
-    
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    bottom:-100%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background:#e74c3c;
-    z-index: 1;
-    transition: 2s;
-
+	margin-top: 20px;
+	float: left;
+	width: 200px;
+	height: 60px;
+	background: url(img/RD.png) no-repeat center;
 }
 
-.screen3.active3
+/*--- nav --*/
+
+nav
 {
-    top:180px;
-    overflow:auto;
-   
+	float: right;
+	padding: 25px 20px 0 0;
 }
 
-.screen4
+#menu-icon
 {
-   
-    
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    bottom:-100%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background:#3498db;
-    z-index: 1;
-    transition: 2s;
-
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background : url(img/nav.png) center;
 }
 
-.screen4.active4
+a:hover#menu-icon {
+	border-radius: 4px 4px 0 0;
+}
+ul
 {
-    top:240px;
-    overflow:auto;
-   
+	list-style-type: none;
 }
+nav ul li
+{
+	font-family: 'Alegreya Sans',sans-serif;
+	font-size: 150%;
+	display:inline-block;
+	float: left;
+	padding: 10px;
+}
+
+nav ul li a
+{
+	color: #f5f5f5;
+	text-decoration: none;
+}
+
+nav ul li a:hover
+{
+	color:#c3d7ef;
+}
+
+.current
+{
+	color:#c3d7ef;	
+}
+
+.banner
+{
+	width: 100%;
+	background-color: #6991ac;
+}
+
+.banner-inner
+{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.one-fourth
+{
+	width: 25%;
+	float: left;
+	text-align: center;
+}
+
+#AU
+{
+	background-color: #f1aa90;
+}
+
+#WWD
+{
+	background-color: #beb9ad;
+}
+
+#SUP
+{
+	background-color: #aadcd2;
+}
+
+#OPP
+{
+	background-color: #a2b2c1;
+}
+
+.one-fourth i
+{
+	color: #f0f0f0;
+	font-size: 500%;
+	padding: 13% 0 4% 0;
+}
+
+.inner-wrapper
+{
+	float: left;
+	width: 100%;
+	background-color: #c3d7df;
+}
+
+article
+{
+	float: left;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+}
+
+#tablet
+{
+	background-color: #c3d7df;
+}
+
+aside
+{
+	float: right;
+	margin: 0 auto;
+	width: 50%;
+	height: auto;
+}
+
+#tablet2
+{
+	background-color: #a2b2c1;
+}
+
+#mobile
+{
+	background-color: #beb9ad;
+}
+
+#desktop
+{
+	background-color: #f1aa90;
+}
+
+#oppo
+{
+	background-color: #a2b2c1;
+}
+
+
+.inner-wrapper-2
+{
+	float: left;
+	width: 100%;
+	background-color: #c3d7df;
+}
+
+footer
+{
+	background-color: #6991ac;
+	width: 100%;
+}
+.social
+{
+	list-style-type: none;
+	text-align: center;
+}
+
+.social li
+{
+	display: inline;
+}
+
+.social i
+{
+	font-size: 460%;
+	margin: 1%;
+	padding: 5% 5% 5% 4%;
+	color: #c3d7df;
+}
+
+.social i:hover
+{
+	color: #f5f5f5;
+}
+
+footer.second
+{
+	border-top: 2px solid #aadcd2;
+	background-color: #544b59;
+	max-height: 55px;
+	text-align: center;
+	margin: 0;
+}
+
+footer.second p 
+{
+	padding: 5px 0 9px 0;
+	text-align: center;
+}
+
+
+/*-- Responsive Part --*/
+
+@media screen and (max-width: 768px) 
+{
+	h2
+	{
+		font-size: 150%;
+	}
+	h3
+	{
+		font-size: 125%;
+	}
+	p
+	{
+		font-size: 120%;
+	}
+	header
+	{
+		position: absolute;
+	}
+	#logo
+	{
+		margin: 15px 0 20px -25px;
+		background: url(img/RD_mobile.png) no-repeat center;
+	}
+	#menu-icon
+	{
+		display: inline-block;
+	}
+	nav ul, nav:active ul
+	{
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 20px;
+		background : #6991AC;
+		right: 20px;
+		top: 60px;
+		border: 1px solid #fff;
+		border-radius: 2px 0 2px 2px;
+		width: 50%;
+
+	}
+	nav:hover ul {
+		display:block;
+
+	}
+
+	nav li
+	{
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+	.banner
+	{
+		padding-top: 86px;
+	}
+	.one-fourth
+	{
+		float: left;
+		width: 100%;
+	}
+	.one-fourth i
+	{
+		font-size: 350%;
+		padding: 4% 0 1% 0;
+	}
+	article 
+	{
+		width: 100%;
+	}
+	aside
+	{
+		width: 100%;
+	}
+	.hand-mobile {
+		display: none;
+	} 
+	.social i
+	{
+		font-size: 180%;
+	}   
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
