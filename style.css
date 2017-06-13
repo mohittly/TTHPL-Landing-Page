@@ -11,7 +11,7 @@ a.fancy {
 	color:white;
 	border: 1px solid white;
 	display : inline-block;
-	width: 400px;
+	width: 200px;
 	border-radius: 5px;
 	padding: 8px;
 	margin: 10px;
@@ -386,7 +386,8 @@ footer.second p
 
 	.contact
 	{
-		font-size:70%;
+		font-size:50%;
+		color:white;
 	}
 
 
