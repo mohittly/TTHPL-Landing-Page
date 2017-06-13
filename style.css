@@ -80,6 +80,12 @@ header
 	height: 80px;
 }
 
+.contact
+{
+	color:white;font-size:100%
+ 
+}
+
 #header-inner
 {
 	max-width: 1200px;
@@ -373,6 +379,16 @@ footer.second p
 	{
 		font-size: 180%;
 	}   
+	a.fancy {
+	{
+		width: 200px;
+	}
+
+	.contact
+	{
+		font-size:70%;
+	}
+
 
 }
 
